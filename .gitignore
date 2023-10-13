@@ -1,0 +1,4 @@
+#File which tells git which files to ignore (not upload/track changes).
+
+.DS_Store
+
