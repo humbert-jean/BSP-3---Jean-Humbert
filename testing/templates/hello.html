@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% block buttons %}
+
+<button>Button1</button>
+
+{% endblock %}
+
+{% block title %}
+XML hello world
+{% endblock %}
+
+{% block body %}
+<pre>
+   {{variables.var1}}
+   {{variables.var2}}
+   {{variables.xmlContent}}
+</pre>
+{% endblock %}
+
+
+{% block styleurl %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}" />
+
+{% endblock %}
+
+

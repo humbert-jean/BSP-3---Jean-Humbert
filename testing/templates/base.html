@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>{% block title %}{% endblock %}</title>
+            {% block styleurl %}{% endblock %}
+    </head>
+    <body>
+        <div class="uk-container uk-container-expand uk-margin-top">
+        {% block header %}{% endblock %}
+        {% block body %}{% endblock %}
+        </div>
+        {% block buttons %}{% endblock %}
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

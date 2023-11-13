@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:AuthnRequest xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" AssertionConsumerServiceURL="http://localhost:8090/idpexample_war_exploded/sp/auth" Destination="http://localhost:8090/idpexample_war_exploded/idp/auth" ID="HO_80839b61-f397-4b8f-8a36-ccfa091f9e87" IssueInstant="2023-10-06T13:49:50.824Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0">
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://sp.honzaik.xyz</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <ds:Reference URI="#HO_80839b61-f397-4b8f-8a36-ccfa091f9e87">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2007/05/xmldsig-more#sha3-256"/>
+                <ds:DigestValue>LNfQZoEF2xPL3p92xPD1pSxy3sEY7XyU6jojuIBoRIE=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>
+OK4+XRZCDiD5339SPDOW8duiOOzAUs3mvde4pw9FAFIM7ilfrwDzPrjPRsLOx1siKlSJROff2B2B
+VW4/5ozmhl0D1AbLc9XDTshseYDBIxkkv8W1C5c95UIF8wZyOBQgp148RIrhBxzCjocDqBWUTayf
+6cyVWs6zxJRKeOYCxmJrrcOTPj2a7a6m1mrAfqYGeMnFJ/ehif2rO7Y423AMagTdNtik5ly/I+dS
+wZCOdvoevHJb6sfNxFtQNJ9d7RIWUjA1QXSBQEe2STileFPAdoZwNEfjOHMKI/gfwYSmSiWHWsoK
+UVbVYCqDvjp0lE4BgzSwILsKzR9Z+WhJRXapRA==
+</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIICsDCCAZigAwIBAgIBBTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1UaGVCZXN0Q0EgUlNB
+MB4XDTIzMDkxMjE0MTk1NloXDTIzMDkyOTE1MDAyNVowHzEdMBsGA1UEAwwUU2VydmljZSBQcm92
+aWRlciBSU0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDO+yJ1L6FVeQZOnq6VWZkC
+7Zg/LgiZ/qznVY7WURpUXLcq3b2zHePeX9sUZwZUpiXgm/AagsNEbGl4DOOCc9LnJ44xZSmr1vr8
+e330AXqpHJhJMI0vx7MUCi9gQlFowWy1+UCMc5mKOGT+L0rEHJvrWO9nlIjh26WbXcyf25uwXRek
+Qp2mxJAx/GFWzRRCup3Uy7BoH151dmigkuL7N59FoAmI6MjGWkADbr0fhun1j2zrC78xQTn3i52F
+mxE6EnRoo9+cVeDfQa5GfFhj+VH7sptIdUvkkNU+yh9zJbOrhifJxL8Q27gefI+j8+Fo4L7fADwS
+ayiEv/qq7PwHRWnbAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAF339uQO+czkd1dy4G0vI8rEVqrc
+nD6GtSHdr4gupn4Xnq2hJeSQ/7t0FzzT73po35FhoUX5dqWftbbBHWmYexMTeeAqeCnqXu3kIYJH
+oJ9zHfmCvpquSJf0qx8BeSzSyVN6frnxUliNlRhl9aXEjWN9Wu7vVhBFbg71aD1LX3zY1JlpMsN9
+srbbUTG27X/PwCZUo56vbkqvugA5mLpBsmZR38DHOsqU6fgsr28WS2lpXjQkWrpDL3WNx8kqNvhy
+/4jpL5Ow2gr2l9b56d0v8hJlpLFDlqxDGAdhiyamrmvXJ3u5+uvlTGPNxNb4/7EkoU7hb9ZFAaBo
+MrGbQgSpeR0=</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+        <saml2:NameID>subject@honzaik.xyz</saml2:NameID>
+    </saml2:Subject>
+</saml2p:AuthnRequest>
